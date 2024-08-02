@@ -1,3 +1,5 @@
+import { Portal } from './Portal'
+
 export function Overlay() {
   return (
     <>
@@ -24,7 +26,7 @@ export function Overlay() {
         P
       </div>
       <div style={{ position: 'absolute', top: 40, right: 160, fontSize: '15px', textAlign: 'right' }}>
-      <a style={{ fontSize: '15px', fontWeight: 600, letterSpacing: 2 }} href="">
+      <a style={{ fontSize: '15px', fontWeight: 600, letterSpacing: 2 }} href="./Portal">
       EXPLORE
         <br />
         MARKETPLACE
@@ -41,19 +43,20 @@ export function Overlay() {
         <line y1="21.5" x2="54" y2="21.5" stroke="black" strokeWidth="3" />
       </svg>
       <div style={{ position: 'absolute', bottom: 120, left: 120, fontSize: '18px' }}>
-        Runtime caustics and soft shadows,
+      An Metaverse NFT Marketplace for psychedelic art,
         <br />
-        for more realism on the web.
+         experience more realism on the web.
         <br />
         <br />
         <div style={{ position: 'relative', marginTop: 10, display: 'inline-block' }}>
-          <a style={{ fontSize: '15px', fontWeight: 600, letterSpacing: 2 }} href="">
+          <a style={{ fontSize: '15px', fontWeight: 600, letterSpacing: 2 }} href="https://github.com/AFYAPP/lucid">
             DOCUMENTATION
           </a>
           <div style={{ marginTop: 6, height: 2.5, width: '100%', background: '#3e3e3d' }} />
         </div>
         <br />
       </div>
+      <Portal />
     </>
   )
 }
